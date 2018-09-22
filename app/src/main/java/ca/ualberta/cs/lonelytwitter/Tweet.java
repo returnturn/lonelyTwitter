@@ -4,9 +4,13 @@ import java.util.Date;
 
 public abstract class Tweet implements Tweetable {
 
+    private Emotion_1 emo;
     private Date date;
     private String message;
     private static final Integer MAX_CHARS = 140;
+
+    String emotion1 = new Emotion_1().giveString();
+    String emotion2 = new Emotion_2().giveString();
 
     //Empty argument constructor with default values
     Tweet() {
